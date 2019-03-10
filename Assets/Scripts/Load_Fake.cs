@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Load_Fake : MonoBehaviour {
+    public Grenade grenade;
+
     public Transform kolowrotek, loadCube;
     public Rigidbody core;
 
@@ -43,6 +45,7 @@ public class Load_Fake : MonoBehaviour {
             //core.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
             kolowrotek.rotation = startRot;
             canShoot = false;
+            //grenade.Explode();
         }
     }
 }
